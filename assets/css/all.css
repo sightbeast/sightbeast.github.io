@@ -1,0 +1,46 @@
+html, body {
+height: 100%;
+width: 100%;
+overflow: scroll;
+}
+.logo {
+font-family: Major Mono Display;
+}
+.element {
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+.center-cols > .col {
+float:none; /* disable the float */
+display: inline-block; /* make blocks inline-block */
+text-align: initial; /* restore text-align to default */
+}
+.cardparent {
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+.card-swag {
+display: flex;
+min-width: 100%;
+min-height: 200px;
+overflow-x: auto;
+}
+.card::-webkit-scrollbar {
+display: none;
+}
+.card--content {
+min-width: 21%;
+margin: 5px;
+padding: 5px;
+color: #34495e
+}
+.name {
+	font-family: News Cycle;
+	text-transform: uppercase;
+	z-index: 100;
+}

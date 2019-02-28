@@ -1,0 +1,29 @@
+<head>
+  <title>
+  {% if page.title == "Home" %}
+    {{ site.data.settings.title }} | {{ site.data.settings.tagline }}
+  {% else %}
+    {{ page.title }} | {{ site.data.settings.title }}
+  {% endif %}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+  <link href="https://fonts.googleapis.com/css?family=News+Cycle:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/assets/js/functions.js" async></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" async></script>
+  <!-- Use Atom -->
+  {% feed_meta %}
+  <!-- Google Analytics -->
+  {% include google-analytics.html %}
+  <!-- Use Jekyll SEO plugin -->
+  {% seo %}
+</head>
